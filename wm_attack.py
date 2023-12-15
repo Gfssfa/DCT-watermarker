@@ -52,14 +52,3 @@ def max_pooling(image, pool_size=2):
     return pooled_image
 
 # 示例使用
-image = cv2.imread('embedded_image.png')  # 加载一张图像
-#noisy_image = rotate_image(image, 0.05)
-noisy_image = random_crop(image, (300,300))
-#noisy_image = max_pooling(image,pool_size=2)
-cv2.imwrite('crop_300.png', noisy_image)
-
-host_image_path = 'frame.png'  # 替换为宿主图像路径
-bgr_image = cv2.imread(host_image_path)
-
-psnr_value = calculate_psnr(bgr_image, noisy_image)
-print(psnr_value)
