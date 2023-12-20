@@ -1,5 +1,6 @@
 # DCT-watermarker
 课程 网络信息安全与信息隐藏 大作业实现代码
+star is welcome!
 ## environment
 |     Item      | Detail |
 | :-----------: | :----: |
